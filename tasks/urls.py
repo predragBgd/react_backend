@@ -20,5 +20,6 @@ from tasks import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/tasks/', views.tasks, name="tasks"),
+    path('api/tasks/', views.tasks, name='tasks'),
+    path('api/tasks/<int:id>',views.task, name='task')
 ]
